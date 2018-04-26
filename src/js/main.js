@@ -2,12 +2,16 @@
 //import hljs from "./node_modules/highlightjs/highlight.pack.min.js";
 import hljs from "./highlight.pack.min.js";
 import Markdown from "./Markdown.js";
+import Editor from "./Editor.js";
 document.addEventListener('DOMContentLoaded', function(){
     //hljs.initHighlightingOnLoad();
     hljs.initHighlighting();
     let m = new Markdown();
     console.log(document.body);
     m.ToAppend(document.body);
+    e = new Editor();
+    e.Editor.setValue(m.Source, -1);
+    console.log(e.Editor);
     //import {Sub} from "./Sub";
     //let sub = new Sub();
     //sub.Show();
