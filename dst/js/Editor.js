@@ -17,6 +17,8 @@ var Editor = function () {
         //require('ace-builds');
         require('ace-builds/src-min-noconflict/ace');
         require('ace-builds/src-min-noconflict/mode-javascript');
+        require('ace-builds/src-min-noconflict/theme-twilight');
+        require('ace-builds/src-min-noconflict/worker-javascript');
         this._editor = null;
         this._CreateEditor();
     }
@@ -25,8 +27,8 @@ var Editor = function () {
         key: '_CreateEditor',
         value: function _CreateEditor() {
             this._editor = ace.edit("Editor"); // HTML id属性=Editor
-            editor.setTheme("ace/theme/twilight");
-            editor.session.setMode("ace/mode/javascript");
+            this.Editor.setTheme("ace/theme/twilight");
+            this.Editor.session.setMode("ace/mode/javascript");
         }
     }, {
         key: 'Editor',

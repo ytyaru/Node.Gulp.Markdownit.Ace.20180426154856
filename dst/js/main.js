@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var m = new _Markdown2.default();
     console.log(document.body);
     m.ToAppend(document.body);
-    e = new _Editor2.default();
+    var e = new _Editor2.default();
     e.Editor.setValue(m.Source, -1);
     console.log(e.Editor);
     //import {Sub} from "./Sub";

@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function(){
     let m = new Markdown();
     console.log(document.body);
     m.ToAppend(document.body);
-    e = new Editor();
+    let e = new Editor();
     e.Editor.setValue(m.Source, -1);
     console.log(e.Editor);
     //import {Sub} from "./Sub";
