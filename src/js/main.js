@@ -7,8 +7,9 @@ document.addEventListener('DOMContentLoaded', function(){
     //hljs.initHighlightingOnLoad();
     hljs.initHighlighting();
     let m = new Markdown();
-    console.log(document.body);
-    m.ToAppend(document.body);
+    //console.log(document.body);
+    //m.ToAppend(document.body);
+    m.ToAppend(document.getElementById('Viewer'));
     let e = new Editor();
     e.Editor.setValue(m.Source, -1);
     console.log(e.Editor);

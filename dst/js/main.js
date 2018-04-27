@@ -18,8 +18,9 @@ document.addEventListener('DOMContentLoaded', function () {
     //hljs.initHighlightingOnLoad();
     _highlightPackMin2.default.initHighlighting();
     var m = new _Markdown2.default();
-    console.log(document.body);
-    m.ToAppend(document.body);
+    //console.log(document.body);
+    //m.ToAppend(document.body);
+    m.ToAppend(document.getElementById('Viewer'));
     var e = new _Editor2.default();
     e.Editor.setValue(m.Source, -1);
     console.log(e.Editor);
