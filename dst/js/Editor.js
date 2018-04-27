@@ -31,7 +31,7 @@ var Editor = function () {
     _createClass(Editor, [{
         key: '_CreateEditor',
         value: function _CreateEditor() {
-            require('brace/mode/javascript');
+            require('brace/mode/markdown');
             require('brace/theme/twilight');
             console.log('_CreateEditor() start');
             //require('../../node_modules/brace/mode/javascript');
@@ -45,7 +45,7 @@ var Editor = function () {
             });
             console.log('editor', this._editor);
             //this.Editor.setTheme("ace/theme/twilight");
-            this.Editor.getSession().setMode("ace/mode/javascript");
+            this.Editor.getSession().setMode("ace/mode/markdown");
         }
     }, {
         key: 'Editor',

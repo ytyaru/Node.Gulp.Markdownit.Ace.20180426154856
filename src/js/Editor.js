@@ -17,7 +17,7 @@ export default class Editor {
     }
     get Editor() { return this._editor; }
     _CreateEditor() {
-        require('brace/mode/javascript');
+        require('brace/mode/markdown');
         require('brace/theme/twilight');
         console.log('_CreateEditor() start');
         //require('../../node_modules/brace/mode/javascript');
@@ -31,6 +31,6 @@ export default class Editor {
         });
         console.log('editor',this._editor);
         //this.Editor.setTheme("ace/theme/twilight");
-        this.Editor.getSession().setMode("ace/mode/javascript");
+        this.Editor.getSession().setMode("ace/mode/markdown");
     }
 }
